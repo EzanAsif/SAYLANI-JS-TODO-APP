@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    <div>
+        <input type="text" id="todo-item" placeholder="Enter todo">
+        <button id="add-item" onclick = "addTodo()" >Add</button>
+        <button onclick="deleteAll()" id="deleteAll">DeleteAll</button>
+    </div>
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
